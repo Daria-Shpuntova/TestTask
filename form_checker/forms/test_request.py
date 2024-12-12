@@ -43,33 +43,3 @@ class TestGetFormView(TestCase):
         super().tearDownClass()
 
 
-#import os
-#import django
-#from django.test import TestCase, Client
-#
-#
-## Установка переменной окружения для настроек
-#os.environ['DJANGO_SETTINGS_MODULE'] = 'form_checker.settings'
-#django.setup()
-#
-#class TestGetFormView(TestCase):
-#    def setUp(self):
-#        self.client = Client()
-#
-#    def test_valid_data(self):
-#        data = {
-#            'f_name1': 'example@example.com',
-#            'f_name2': '+7 123 456 78 90'
-#        }
-#        response = self.client.post('/forms/get_form/', data=data)
-#        self.assertEqual(response.status_code, 200)
-#        self.assertIn('template_name', response.json())
-#
-#    def test_invalid_data(self):
-#        data = {
-#            'f_name1': 'invalid_email',
-#            'f_name2': 'not_a_phone'
-#        }
-#        response = self.client.post('/forms/get_form/', data=data)
-#        self.assertEqual(response.status_code, 200)
-#        self.assertIn('validation_results', response.json())

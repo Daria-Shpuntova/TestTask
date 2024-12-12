@@ -1,0 +1,1 @@
+{"_default": {"1": {"name": "email_phone", "fields": {"f_name1": "email", "f_name2": "phone"}}, "2": {"name": "date_email_text", "fields": {"f_name1": "text", "f_name2": "date", "f_name3": "email"}}}}
